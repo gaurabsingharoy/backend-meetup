@@ -74,7 +74,7 @@ app.post("/meetups", async (req, res) => {
         const savedEvent = await createNewEvent(req.body)
         res.status(201).json({message: "Event added successfully"})
     }catch(error){
-        res.status(500).json({error: "Failed to add event", error})
+        res.status(500).json({error: "Failed to add event"})
     }
 })
 
