@@ -62,7 +62,7 @@ async function createNewEvent(newEvent){
         const saveMeetup = await meetup.save()
         return saveMeetup
     }catch(error){
-        console.log(error)
+        throw error
     }
 }
 
